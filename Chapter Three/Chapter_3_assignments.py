@@ -1,10 +1,11 @@
 # Chapter_3_assignments 
+# Chapter_3_assignments 
 
-3.1) 
+# 3.1) Validating user inputs
 
-3.2) Nothing except both variables have a single value assigned to them
+# 3.2) Nothing except both variables have a single value assigned to them
 
-3.3) >>>>>>>>>>
+# 3.3) >>>>>>>>>>
      <<<<<<<<<<
      >>>>>>>>>>
      <<<<<<<<<<
@@ -15,12 +16,12 @@
      >>>>>>>>>>
      <<<<<<<<<<
 
-3.4) for row in range(2):
+# 3.4) for row in range(2):
 	for column in range(7):
 		print('@', end='')
 	print()
 
-3.5) # Turing test
+# 3.5) Turing test
 print("What is your problem?")
 input()
 
@@ -36,7 +37,7 @@ This will not convince the user as it ignores an the first question
 
 
 
-3.6) #Table of Squares and Cube
+# 3.6) Table of Squares and Cube
 
 print(f"{'Number'} {'Square'} {'Cube'}")
 
@@ -46,15 +47,15 @@ for number in range(6):
     print(f"{number:>6} {square:>6} {cube:>6}")
 
 
-3.8) # Arithmetic Largest and Smallest
+# 3.8)  Arithmetic Largest and Smallest
 for i in range(4):
     num = int(input(f"Enter integer #{i + 1}: "))
 
-3.9)
+# 3.9) Seperating digits in an integer
 
-3.10)
+# 3.10) 7% investment return
 
-3.11) # miles per gallon 
+# 3.11)  miles per gallon 
 total_miles = 0
 total_gallons = 0
 
@@ -70,7 +71,7 @@ while True:
     total_miles += miles
     total_gallons += gallon
 
-3.12) # palindrome_checker
+# 3.12)  palindrome_checker
 number = int(input("Enter a five-digit integer: "))
 if 10000 <= number <= 99999:
     digit1 = number // 10000         
@@ -79,13 +80,12 @@ if 10000 <= number <= 99999:
     digit4 = (number // 10) % 10    
     digit5 = number % 10           
     
-    # Check if first and last digits match
     if digit1 == digit5 and digit2 == digit4:
         print(f"{number} is a palindrome")
     else:
         print(f"{number} is not a palindrome")
 
-3.13) # factorials
+# 3.13)  factorials
 number = int(input("Enter a nonnegative integer: "))
 if number >= 0:
     factorial = 1
@@ -95,9 +95,15 @@ if number >= 0:
 else:
     print("Please enter a nonnegative integer")
 
-3.16) #two largest values
-largest = float('-inf')
-second_largest = float('-inf')
+# 3.14) Challenge: Approximating the mathematical constant PI
+
+# 3.15) Challenge: Approximating the mathematical constant E
+factorial = 1
+constant = 1
+
+
+# 3.16) two largest values
+largest = 
 for i in range(10):
     num = float(input(f"Enter number {i + 1}: "))
     if num > largest:
@@ -108,7 +114,7 @@ for i in range(10):
 print(f"The largest number is: {largest}")
 print(f"The second-largest number is: {second_largest}")
 
-3.17) # triangles
+# 3.17) triangles
 #first triangle
 for i in range(10):
     spaces = " " * i
@@ -133,26 +139,60 @@ for i in range(10):
     spaces = " " * (i // 2)
     print(spaces + asterisks + spaces)
 
-3.21) # Calculate change
+# 3.19) Brute-force Computing: Pythagorean Triples
+
+# 3.20) Binary to decimal conversion
+
+# 3.21) Calculate change
 price = int(input("Enter purchase price in cents (1-100): "))
 
 if 1 <= price <= 100:
     change = 100 - price
  
-    quarters = change // 25
-    change = change % 25
-    dimes = change // 10
-    change = change % 10
-    nickels = change // 5
-    pennies = change % 5
-
-    print(f"Change for ${price/100:.2f} from $1.00:")
-    print(f"Quarters: {quarters}")
-    print(f"Dimes: {dimes}")
-    print(f"Nickels: {nickels}")
-    print(f"Pennies: {pennies}")
-else:
+    
     print("Please enter a valid price between 1 and 100 cents")
 
+
+# 3.22) Optional else clause of a loop
+for i in range(2):
+	value = int(input('Enter an integer (-1 to break): '))
+	print('You entered:', value)
+
+	if value == -1:
+		break
+	else:
+		print('The loop terminated without executing the break')
+
+
+# 3.23) Validating Indentation
+grade = 93
+if grade >= 90:
+    print('A')
+ print('Great Job!')
+   print('Take a break from studying')
+
+
+# 3.24) Project: Using the prospector static code analysis tool
+
+# 3.25) Project: Using prospector to analyze open-source code on github
+
+# 3.26) Research: Anscombe's quartet
+
+# 3.27) World population growth
+
+# 3.28) Mean, Median, Mode
+print('Calculate the mean of the following values...9, 11, 22, 34, 17, 22, 34, 22 and 40')
+mean = 9 + 11 + 22 + 34 + 17 + 22 + 34 + 22 + 40 / 9
+print(mean)
+
+print('Median is 17')
+
+print('Mode is 22')
+
+# 3.29) Problem with the median
+
+# 3.30) Intro to Data Science: Outliers
+
+# 3.31) Intro to data science: Categorical data
 
 
